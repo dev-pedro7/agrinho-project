@@ -1,2 +1,2 @@
-import { showTabs } from './components/Menu.js';
+import { showTabs } from '../src/components/Menu.js';
 window.showTabs = showTabs;
