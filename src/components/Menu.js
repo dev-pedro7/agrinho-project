@@ -1,3 +1,4 @@
+/*
 export function showTabs() {
   var x = document.getElementById("links");
   if (x.style.display === "block") {
@@ -6,3 +7,4 @@ export function showTabs() {
     x.style.display = "block";
   }
 }
+*/
