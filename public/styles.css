@@ -14,6 +14,11 @@
     padding: 0;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
@@ -22,15 +27,100 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    display: flex;
+.main-container {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Garante que a altura da tela seja preenchida */
+        width: 100%;
+
+}
+a{
+    text-decoration: none;
+    color: #5e5b5b;
 }
 
 .mobile-nav {
-    display: none;
+    display: block;
     position: relative;
     background-color: var(--bgMenu);
     text-align: center;
+}
+
+.img-home{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/src/assets/images/WhatsApp\ Image\ 2024-07-13\ at\ 11.58.33\ \(2\).jpeg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    width: 60vw;
+    height: 60vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:16em ;
+    align-items: flex-start; 
+
+}
+
+.img-home >p{
+    padding: 25px;
+    text-align: center;
+    
+    
+}
+
+@media screen and (min-width:1024px) {
+    .topnav {
+        background-color: #2F4F4F;
+        display: block;
+        overflow: hidden;
+        font-weight: lighter;
+
+    }
+    .topnav a {
+        float: left;
+        display: block;
+        text-align: center;
+        color: var(--thirdTextColor);
+        text-decoration: none;
+        padding: 10px 16px;
+        font-size: 0.9em;
+        border-bottom: 3px solid transparent;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .topnav a:hover {
+        background-color: var(--contrast);
+        color: var(--primaryTextColor);
+    }
+    .topnav a.active {
+        border-bottom: 3px solid var(--thirdTextColor);
+    }
+
+    #tab {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+    .item-menu::after {
+        content: "";
+        background-color: var(--bgColor);
+        height: 100%;
+        width: 0px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: 150ms ease-in-out;
+    }
+    .item-menu:hover::after {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -43,21 +133,17 @@ main {
 
     .mobile-nav #links {
         display: none;
-    }
-    #links{
-      text-align: left;
-      
+        text-align: left;
     }
 
     .mobile-nav a {
         color: var(--thirdTextColor);
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 16px;
         display: block;
     }
 
-    
     .mobile-nav a.icon {
         background: var(--bgMenu);
         display: block;
@@ -68,26 +154,24 @@ main {
         color: var(--thirdTextColor);
     }
 
-    .mobile-nav a:hover {
-        background-color: var(--bgMenu);
-        color: var(--thirdTextColor);
-    }
 
-    .item-menu{
+    .item-menu {
         border: 1px solid rgb(27, 25, 25);
     }
 }
 
 h1 {
     color: var(--primaryTextColor);
-    font-size: 4em;
-    width: min(500px, 90%);
-    flex: auto;
+    font-size: 3em;
+    width: min(63vw, 90%);
+    margin: 20px auto;
+    text-align: center;
 }
 
 .anim-h1 {
     animation: focus-in-contract .9s cubic-bezier(.25,.46,.45,.94) both;
 }
+
 @keyframes focus-in-contract {
     0% {
         letter-spacing: 2px;
