@@ -12,8 +12,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -28,15 +28,14 @@ body {
 }
 
 .main-container {
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* Garante que a altura da tela seja preenchida */
-        width: 100%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
     color: #5e5b5b;
 }
@@ -48,9 +47,8 @@ a{
     text-align: center;
 }
 
-.img-home{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/src/assets/images/WhatsApp\ Image\ 2024-07-13\ at\ 11.58.33\ \(2\).jpeg);
+.img-home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/src/images/WhatsApp\ Image\ 2024-07-13\ at\ 11.58.33\ \(2\).jpeg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -61,26 +59,71 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom:16em ;
-    align-items: flex-start; 
-
+    margin-bottom: 16em;
+    align-items: flex-start;
 }
 
-.img-home >p{
+.img-home > p {
     padding: 25px;
     text-align: center;
-    
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#change-theme {
+    display: none;
+}
+
+.dark {
+    background-color: #333;
+}
+
+.bi-moon {
+    display: none;
     
 }
 
-@media screen and (min-width:1024px) {
+.bi-sun {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dark .bi-sun {
+    display: none;
+    cursor: pointer;
+}
+
+.dark .bi-moon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+label > i{
+    color: #ffffff;
+}
+
+@media screen and (min-width: 911px) {
+    
     .topnav {
         background-color: #2F4F4F;
         display: block;
         overflow: hidden;
         font-weight: lighter;
-
+        box-shadow: 0.5px 0.5px 10px 0.5px #000;
+        position: relative;
+        transition: background-color 0.3s ease;
     }
+
     .topnav a {
         float: left;
         display: block;
@@ -97,6 +140,7 @@ a{
         background-color: var(--contrast);
         color: var(--primaryTextColor);
     }
+
     .topnav a.active {
         border-bottom: 3px solid var(--thirdTextColor);
     }
@@ -104,9 +148,11 @@ a{
     #tab {
         display: none;
     }
+
     .icon {
         display: none;
     }
+
     .item-menu::after {
         content: "";
         background-color: var(--bgColor);
@@ -118,12 +164,13 @@ a{
         z-index: -1;
         transition: 150ms ease-in-out;
     }
+
     .item-menu:hover::after {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 910px) {
     .mobile-nav {
         display: block;
         overflow: hidden;
@@ -154,9 +201,12 @@ a{
         color: var(--thirdTextColor);
     }
 
-
     .item-menu {
         border: 1px solid rgb(27, 25, 25);
+    }
+
+    .img-home {
+        background-size: cover;
     }
 }
 
@@ -169,7 +219,7 @@ h1 {
 }
 
 .anim-h1 {
-    animation: focus-in-contract .9s cubic-bezier(.25,.46,.45,.94) both;
+    animation: focus-in-contract .9s cubic-bezier(.25, .46, .45, .94) both;
 }
 
 @keyframes focus-in-contract {
@@ -178,6 +228,7 @@ h1 {
         filter: blur(12px);
         opacity: 0;
     }
+
     100% {
         filter: blur(0);
         opacity: 1;
