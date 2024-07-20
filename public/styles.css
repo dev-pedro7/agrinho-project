@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
     --bgColor: #f8f8e9;
     --bgMenu: #333;
@@ -30,14 +30,14 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     height: 100vh;
     width: 100%;
 }
 
 a {
     text-decoration: none;
-    color: #5e5b5b;
+    color: var(--secundaryTextColor);
 }
 
 .mobile-nav {
@@ -48,24 +48,28 @@ a {
 }
 
 .img-home {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/src/images/WhatsApp\ Image\ 2024-07-13\ at\ 11.58.33\ \(2\).jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/img-home.png);
     background-attachment: fixed;
-    background-position: center center;
+   
     background-repeat: no-repeat;
-    background-size: 70%;
-    width: 60vw;
-    height: 60vh;
+    background-position: center center;
+    background-size: 100%;
+    max-width: 1360px;
+    max-height: 1000px;
+    height: 70%;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 16em;
+    
     align-items: flex-start;
 }
 
 .img-home > p {
     padding: 25px;
     text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
 
 input[type="checkbox"] {
@@ -88,10 +92,10 @@ input[type="checkbox"] {
 .bi-sun {
     cursor: pointer;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 20px;
     display: flex;
-    align-items: center;
+    font-size: 35px;
 }
 
 .dark .bi-sun {
@@ -102,26 +106,53 @@ input[type="checkbox"] {
 .dark .bi-moon {
     cursor: pointer;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 20px;
+    top: 20px;
     display: flex;
-    align-items: center;
+    font-size: 35px;
 }
 
 label > i{
     color: #ffffff;
 }
+#img-sec{
+    background-image:url(images/img-produtores.png);
+    width: 40vw;
+    height: 50vh;
+    margin-top: -100px;
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    margin-left: 60px;
+}
 
+.img-p-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-p-container > #img-sec {
+    flex: 0 0 40%;
+}
+
+.img-p-container > p{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
 @media screen and (min-width: 911px) {
     
     .topnav {
         background-color: #2F4F4F;
         display: block;
         overflow: hidden;
-        font-weight: lighter;
+        font-weight: 400;
+        font-size: 1.1em;
         box-shadow: 0.5px 0.5px 10px 0.5px #000;
         position: relative;
         transition: background-color 0.3s ease;
+        line-height: 6vh;
     }
 
     .topnav a {
@@ -163,10 +194,12 @@ label > i{
         top: 0;
         z-index: -1;
         transition: 150ms ease-in-out;
+        
     }
 
     .item-menu:hover::after {
         width: 100%;
+        
     }
 }
 
@@ -207,6 +240,8 @@ label > i{
 
     .img-home {
         background-size: cover;
+        width: 90%;
+        
     }
 }
 
@@ -234,3 +269,84 @@ h1 {
         opacity: 1;
     }
 }
+
+footer {
+    background-color: #222;
+    color: var(--thirdTextColor);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer > .midia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer > .midia > a {
+    color: var(--thirdTextColor);
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-scroll-to-top{
+    background-color: var(--contrast);
+    color: #000;
+    font-size: 1.8em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    right: 20px;    
+}
+
+.btn-scroll-to-top:hover{
+    opacity: 0.8px;
+
+}
+
+
+.midia:hover{
+    opacity: 1px;
+}
+
+#github-ico{
+    text-decoration: none;
+}
+#github-ico i{
+    color: #ffffff; 
+    transition: color 0.3s, transform 0.3s;
+}
+#github-ico:hover{
+    color: #7a7272;
+    transform: scale(1.2);
+}
+
+#linkedin-ico{
+    text-decoration: none;
+}
+#linkedin-ico i{
+    color: #0077b5; 
+  transition: color 0.3s, transform 0.3s;
+}
+#linkedin-ico:hover{
+    color: #0077b5;
+    transform: scale(1.2);
+}
+
+#insta-ico{
+    text-decoration: none;
+}
+#insta-ico i{
+    color: #0077b5; 
+  transition: color 0.3s, transform 0.3s;
+}
+#insta-ico:hover{
+    color: #C13584;
+    transform: scale(1.2);
+}
+
+
+

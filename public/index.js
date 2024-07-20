@@ -31,3 +31,15 @@ changeTheme.addEventListener('change', function(){
       localStorage.setItem('dark',1)
     }
 })
+
+document.addEventListener('DOMContentLoaded', function(){
+  const scrollTop = document.getElementById('scroll-to-top')
+
+  scrollTop.addEventListener('click', function(){
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  })
+})
+

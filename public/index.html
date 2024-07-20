@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cidade do ☕</title>
+    <title>Cidade do café</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -12,7 +12,6 @@
 </head>
 <body>
     <header>
-     
         <div class="mobile-nav" onclick="showTabs()">
             <a href="#" id="tab">tab</a>
             <nav class="topnav">
@@ -33,23 +32,38 @@
               <i class="fa fa-bars"></i>
             </a>
           </div>
-          
-        <h1 class="anim-h1">Bem-vindo à cidade do café ☕</h1>
     </header>
 
-    <main class="main-container">
-        <section class="img-home">
-           <p><a href="http://www.mandaguari.pr.gov.br/index.php?sessao=b054603368ncb0&id=1865" target="_blank">Mandaguari</a>, a encatadora cidade do café! Localizada no norte do Paraná, é um lugar de belas tradições que continuará sendo eternizadas. Com uma historia rica em produção de café, além de destaca-se nacionalmente na qualidade de seus grãos, revolucionando da cidade ao campo.</p>
-          
+    <main>
+      <h1 class="anim-h1">Bem-vindo à cidade do café ☕</h1>
+        <section class="main-container">
+          <div class="img-home">
+           <p><a href="http://www.mandaguari.pr.gov.br/index.php?sessao=b054603368ncb0&id=1865" target="_blank">Mandaguari</a>, a encatadora cidade do café! Localizada no norte do Paraná. Com uma historia rica em produção de café, além de destaca-se nacionalmente na qualidade de seus grãos, revolucionando da cidade ao campo.</p>
           </section>
-
-        <article>
-
-        </article>
+        </div>
+        <section class="img-p-container">
+          <div id="img-sec"></div>
+            <p> Um lugar de belas tradições que continuará sendo eternizadas. </p>
+          
+        </section>
     </main>
 
     <footer>
-
+      <button id="scroll-to-top" class="btn-scroll-to-top">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+      <div class="midia">
+        <h3><strong>SIGA-NOS</strong></h3>
+        <a href="https://github.com/dev-pedro7" target="_blank">
+          <i class="bi bi-github" id="github-ico"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/pedro-toaldo-0000p/" target="_blank">
+          <i class="bi bi-linkedin" id="linkedin-ico"></i>
+        </a>
+        <a href="https://www.instagram.com/colegiogori/" target="_blank">
+          <i class="bi bi-instagram" id="insta-ico"></i>
+        </a>
+      </div>
     </footer>
 
     <script src="index.js"></script>
