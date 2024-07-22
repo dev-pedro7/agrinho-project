@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --bgColor: #f8f8e9;
     --bgMenu: #333;
@@ -57,19 +58,18 @@ a {
     max-width: 1360px;
     max-height: 1000px;
     height: 70%;
+    width: 100%;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
     align-items: flex-start;
 }
 
 .img-home > p {
     padding: 25px;
-    text-align: center;
+    font-size: 40px;
+
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 input[type="checkbox"] {
@@ -82,11 +82,11 @@ input[type="checkbox"] {
 
 .dark {
     background-color: #333;
+    color: #ffffff;
 }
 
 .bi-moon {
-    display: none;
-    
+    display: none; 
 }
 
 .bi-sun {
@@ -115,6 +115,7 @@ input[type="checkbox"] {
 label > i{
     color: #ffffff;
 }
+
 #img-sec{
     background-image:url(images/img-produtores.png);
     width: 40vw;
@@ -122,16 +123,32 @@ label > i{
     margin-top: -100px;
     background-repeat: no-repeat;
     background-position: 100% 30%;
-    margin-left: 60px;
+    margin-left:60px;
+    margin-bottom: 200px;
 }
 
 .img-p-container{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-start;
+    
+    
+    
 }
 
-.img-p-container > #img-sec {
+#img-ter{
+    background-image:url(images/WhatsApp\ Image\ 2024-07-13\ at\ 11.58.33.jpeg);
+    width: 40vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right:60px;
+    margin-bottom: 200px;
+    
+}
+
+.img-p-container > #img-sec{
     flex: 0 0 40%;
 }
 
@@ -140,7 +157,71 @@ label > i{
     margin-left: 20px;
     font-size: 40px;
     font-weight: 500;
+    
 }
+
+.img-p{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse; 
+    align-items: flex-start;
+    
+    
+}
+
+.img-p > p {
+    flex: 1;
+    margin-left: 60px;
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+
+.img-p > #img-ter{
+    flex: 0 0% 0%;
+}
+.button {
+    margin-top: 50px;
+    padding: 20px 20px;
+    
+    color: #000;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color:var(--contrast);
+      
+      z-index: -2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: var(--secundaryTextColor);
+      transition: all .3s;
+      
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
 @media screen and (min-width: 911px) {
     
     .topnav {
@@ -240,6 +321,7 @@ label > i{
 
     .img-home {
         background-size: cover;
+        background-attachment: scroll;
         width: 90%;
         
     }
@@ -307,7 +389,6 @@ footer > .midia > a {
 
 }
 
-
 .midia:hover{
     opacity: 1px;
 }
@@ -315,10 +396,12 @@ footer > .midia > a {
 #github-ico{
     text-decoration: none;
 }
+
 #github-ico i{
     color: #ffffff; 
     transition: color 0.3s, transform 0.3s;
 }
+
 #github-ico:hover{
     color: #7a7272;
     transform: scale(1.2);
@@ -327,10 +410,12 @@ footer > .midia > a {
 #linkedin-ico{
     text-decoration: none;
 }
+
 #linkedin-ico i{
     color: #0077b5; 
   transition: color 0.3s, transform 0.3s;
 }
+
 #linkedin-ico:hover{
     color: #0077b5;
     transform: scale(1.2);
@@ -339,10 +424,12 @@ footer > .midia > a {
 #insta-ico{
     text-decoration: none;
 }
+
 #insta-ico i{
     color: #0077b5; 
   transition: color 0.3s, transform 0.3s;
 }
+
 #insta-ico:hover{
     color: #C13584;
     transform: scale(1.2);
