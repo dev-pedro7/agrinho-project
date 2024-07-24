@@ -31,9 +31,8 @@ body {
 .main-container {
     display: flex;
     justify-content: center;
-    
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 a {
@@ -51,17 +50,17 @@ a {
 .img-home {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/img-home.png);
     background-attachment: fixed;
-   
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
-    max-width: 1360px;
-    max-height: 1000px;
+    background-size: cover;
+    max-width: 2500px;
+    max-height: 2000px;
     height: 70%;
-    width: 100%;
+    width: 94%;
     color: white;
     display: flex;
     align-items: flex-start;
+    
 }
 
 .img-home > p {
@@ -86,7 +85,12 @@ input[type="checkbox"] {
 }
 
 .dark article p{
-    color: #000;
+    color: var(--thirdTextColor);
+    background-color: #222;
+    border: 1px solid #111010;
+}
+.dark article{
+    background-color: #222;
 }
 .bi-moon {
     display: none; 
@@ -96,9 +100,9 @@ input[type="checkbox"] {
     cursor: pointer;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 0.5em;
     display: flex;
-    font-size: 35px;
+    font-size: 1.5em;
 }
 
 .dark .bi-sun {
@@ -110,9 +114,9 @@ input[type="checkbox"] {
     cursor: pointer;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 0.5em;
     display: flex;
-    font-size: 35px;
+    font-size: 1.5em;
 }
 
 label > i{
@@ -141,7 +145,7 @@ label > i{
 }
 
 #img-ter{
-    background-image:url(images/WhatsApp\ Image\ 2024-07-13\ at\ 11.58.33.jpeg);
+    background-image:url(images/café.png);
     width: 40vw;
     height: 50vh;
     background-repeat: no-repeat;
@@ -225,6 +229,23 @@ label > i{
       }
     }
   }
+
+#img-drone{
+    background-image: url(images/drone.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 2500px;
+    max-height: 2000px;
+    height: 70%;
+    width: 95%;
+    color: white;
+    display: flex;
+    margin-right: 13px;
+}
+
+
 @media screen and (min-width: 911px) {
     
     .topnav {
@@ -360,6 +381,7 @@ footer {
     color: var(--thirdTextColor);
     text-align: center;
     padding: 20px 0;
+    width: 100;
 }
 
 footer > .midia {
@@ -450,7 +472,7 @@ article {
 
 article p {
     background-color: var(--thirdTextColor);
-    border: 1px solid var(--secundaryTextColor);
+    border: 1px solid #e9e3e3;
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
