@@ -231,7 +231,7 @@ label > i{
   }
 
 #img-drone{
-    background-image: url(images/drone.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.548)), url(images/drone.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -242,7 +242,17 @@ label > i{
     width: 95%;
     color: white;
     display: flex;
-    margin-right: 13px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    margin-right: -13px;
+    
+}
+
+#button-image{
+    display: flex;
 }
 #father-img{
     border-radius: 50%;
@@ -287,6 +297,15 @@ h5{
 #line{
     border-bottom: 2px solid black;
     padding-bottom: 10px;
+}
+.products-img{
+    background-image:url(images/bela-esperanca.png);
+    width: 40vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right:60px;
+    margin-bottom: 200px;
 }
 @media screen and (min-width: 911px) {
     
