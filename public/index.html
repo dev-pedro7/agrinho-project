@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -38,27 +39,27 @@
 
     <main>
       <h1 class="anim-h1">Bem-vindo à cidade do café ☕</h1>
-        <section class="main-container">
+        <section class="main-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
           <div class="img-home">
            <p><a href="http://www.mandaguari.pr.gov.br/index.php?sessao=b054603368ncb0&id=1865" target="_blank">Mandaguari</a>, a encantadora cidade do café! <br> Localizada no norte do Paraná.</p>
           </section>
         </div>
         <section class="img-p-container">
-          <div id="img-sec"></div>
-            <p> Um lugar de belas tradições cafeeira que continuará sendo eternizadas. <br> <br>
-              <a href="history.html"class="button">NOSSA HISTORIA</a>
+          <div id="img-sec" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100"></div>
+            <p data-aos="fade" data-aos-duration="3000" data-aos-delay="200"> Um lugar de belas tradições cafeeira que continuará sendo eternizadas. <br> <br>
+              <a href="history.html"class="button"  data-aos="fade" data-aos-duration="3000" data-aos-delay="300" >NOSSA HISTORIA</a>
             </p>
           
         </section>
         <section class="img-p">
-          <div id="img-ter"></div>
-          <p>Com uma historia rica em produção de café, além de destaca-se nacionalmente na qualidade de seus grãos.<br> <br>
-            <a href="products.html"  class="button">PRODUTORES LOCAIS</a>
+          <div id="img-ter" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="100" ></div>
+          <p data-aos="fade" data-aos-duration="3000" data-aos-delay="200" ><br>Com uma historia rica em produção de café, destaca-se nacionalmente na qualidade de seus grãos.<br> <br>
+            <a href="products.html"  class="button" data-aos="fade" data-aos-duration="3000" data-aos-delay="300">PRODUTORES LOCAIS</a>
           </p>            
         </section>
 
         <section class="main-container">
-          <div id="img-drone">
+          <div id="img-drone"  data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
             <div><p></p></div>
           </div>
         </section>
@@ -83,7 +84,7 @@
       <p>&copy; 2024 Cidade do Café. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="index.js"></script>
-    
 </body>
 </html>

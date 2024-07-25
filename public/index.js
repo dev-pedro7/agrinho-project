@@ -1,10 +1,10 @@
  function showTabs() {
   if (window.innerWidth <= 910){
-    var x = document.getElementById("links");
+    var x = document.getElementById("links")
     if (x.style.display === "block") {
-      x.style.display = "none";
+      x.style.display = "none"
     } else {
-      x.style.display = "block";
+      x.style.display = "block"
     }
   }
 }
@@ -43,3 +43,16 @@ document.addEventListener('DOMContentLoaded', function(){
   })
 })
 
+var prevScroll = window.scrollY
+window.onscroll = function() {
+  var posScroll = window.scrollY
+  var topnav = document.getElementsByClassName("topnav")[0]
+  if (prevScroll > posScroll) {
+    topnav.style.top = "0"
+  } else {
+    topnav.style.top = "-50px"
+  }
+  prevScroll = posScroll;
+}
+
+AOS.init()

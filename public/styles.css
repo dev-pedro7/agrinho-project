@@ -244,8 +244,50 @@ label > i{
     display: flex;
     margin-right: 13px;
 }
-
-
+#father-img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    
+}
+.info-interviewed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.info-interviewed h4{
+    font-weight: 400;
+}
+#subtittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-size:18px;
+    line-height: 1.6em;
+    text-align: justify;
+    padding: 40px;
+}
+#subtittle h4{
+    font-weight: 200;
+}
+#subtittle h3{
+    font-weight: 400;
+}
+h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -23px 0 0 90px;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+#line{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
 @media screen and (min-width: 911px) {
     
     .topnav {
@@ -256,8 +298,8 @@ label > i{
         font-size: 1.1em;
         box-shadow: 0.5px 0.5px 10px 0.5px #000;
         position: relative;
-        transition: background-color 0.3s ease;
         line-height: 6vh;
+        transition: top 0.4s;
     }
 
     .topnav a {
