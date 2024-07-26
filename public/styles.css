@@ -184,9 +184,7 @@ label > i{
     
 }
 
-.img-p > #img-ter{
-    flex: 0 0% 0%;
-}
+
 .button {
     margin-top: 50px;
     padding: 20px 20px;
@@ -369,7 +367,10 @@ h5{
     }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 480px) {
+    html{
+        overflow-x: hidden;
+    }
     .mobile-nav {
         display: block;
         overflow: hidden;
@@ -409,6 +410,49 @@ h5{
         background-attachment: scroll;
         width: 90%;
         
+    }
+    .img-p-container, .img-p {
+        flex-direction: column;
+        display: inline-block;
+        align-items: center;
+        margin-bottom: 9em;
+        margin-top: -90px;
+    }
+    .img-p-container > div, .img-p > div {
+        width: 90%;
+        height:50vh;
+    }
+    
+    .img-p-container > p, .img-p > p {
+        margin: 30px auto 0 auto;
+        font-size: 1.2em;
+        text-align: center;
+        width: 90%;
+        
+    }
+    #img-sec, #img-ter {
+        width: 90%;
+        height: 40vh;
+        margin: 0;
+        background-position: 100% 30%;
+        background-size: cover;
+        margin: auto;
+        
+    }
+    #img-drone{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-size: cover;
+        width: 90%;
+        height: 65vh;
+        margin: auto;
+        padding: 20px;
+        background-attachment: scroll;
+        
+    }
+    .img-p{
+        margin-bottom: auto;
     }
 }
 
