@@ -48,7 +48,7 @@ a {
 }
 
 .img-home {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/img-home.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/img-home.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -90,9 +90,11 @@ input[type="checkbox"] {
     background-color: #222;
     border: 1px solid #111010;
 }
+
 .dark article{
     background-color: #222;
 }
+
 .bi-moon {
     display: none; 
 }
@@ -125,7 +127,7 @@ label > i{
 }
 
 #img-sec{
-    background-image:url(images/img-produtores.png);
+    background-image:url(images/img-produtores.jpg);
     width: 40vw;
     height: 50vh;
     margin-top: -100px;
@@ -140,20 +142,16 @@ label > i{
     justify-content: space-between;
     flex-direction: row; 
     align-items: flex-start;
-    
-    
-    
 }
 
 #img-ter{
-    background-image:url(images/café.png);
+    background-image:url(images/café.jpg);
     width: 40vw;
     height: 50vh;
     background-repeat: no-repeat;
     background-position: center center;
     margin-right:60px;
-    margin-bottom: 200px;
-    
+    margin-bottom: 200px;  
 }
 
 .img-p-container > #img-sec{
@@ -164,8 +162,7 @@ label > i{
     flex: 1;
     margin-left: 20px;
     font-size: 40px;
-    font-weight: 500;
-    
+    font-weight: 500; 
 }
 
 .img-p{
@@ -173,8 +170,6 @@ label > i{
     justify-content: space-between;
     flex-direction: row-reverse; 
     align-items: flex-start;
-    
-    
 }
 
 .img-p > p {
@@ -184,7 +179,6 @@ label > i{
     font-weight: 500;
     
 }
-
 
 .button {
     margin-top: 50px;
@@ -227,10 +221,10 @@ label > i{
         width: 100%;
       }
     }
-  }
+}
 
 #img-drone{
-    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.548)), url(images/drone.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.548)), url(images/drone.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -253,6 +247,7 @@ label > i{
 #button-image{
     display: flex;
 }
+
 #father-img{
     border-radius: 50%;
     width: 80px;
@@ -260,14 +255,17 @@ label > i{
     margin-right: 10px;
     
 }
+
 .info-interviewed {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
+
 .info-interviewed h4{
     font-weight: 400;
 }
+
 #subtittle{
     display: flex;
     align-items: center;
@@ -279,12 +277,15 @@ label > i{
     text-align: justify;
     padding: 40px;
 }
+
 #subtittle h4{
     font-weight: 200;
 }
+
 #subtittle h3{
     font-weight: 400;
 }
+
 h5{
     display: flex;
     align-items: center;
@@ -293,12 +294,14 @@ h5{
     font-weight: 300;
     font-size: 0.8em;
 }
+
 #line{
     border-bottom: 2px solid black;
     padding-bottom: 10px;
 }
+
 .products-img{
-    background-image:url(images/bela-esperanca.png);
+    background-image:url(images/bela-esperanca.jpg);
     width: 40vw;
     height: 50vh;
     background-repeat: no-repeat;
@@ -317,6 +320,166 @@ h5{
  max-width: 110px;
  width: 100%;
 }
+
+h1 {
+    color: var(--primaryTextColor);
+    font-size: 3em;
+    width: min(63vw, 90%);
+    margin: 20px auto;
+    text-align: center;
+}
+
+.anim-h1 {
+    animation: focus-in-contract .9s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+@keyframes focus-in-contract {
+    0% {
+        letter-spacing: 2px;
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #222;
+    color: var(--thirdTextColor);
+    text-align: center;
+    padding: 20px 0;
+    width: 100;
+}
+
+footer > .midia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer > .midia > a {
+    color: var(--thirdTextColor);
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-scroll-to-top{
+    background-color: var(--contrast);
+    color: #000;
+    font-size: 1.8em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    right: 20px;    
+}
+
+.btn-scroll-to-top:hover{
+    opacity: 0.8px;
+
+}
+
+.midia:hover{
+    opacity: 1px;
+}
+
+#github-ico{
+    text-decoration: none;
+}
+
+#github-ico i{
+    color: #ffffff; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+#github-ico:hover{
+    color: #7a7272;
+    transform: scale(1.2);
+}
+
+#linkedin-ico{
+    text-decoration: none;
+}
+
+#linkedin-ico i{
+    color: #0077b5; 
+  transition: color 0.3s, transform 0.3s;
+}
+
+#linkedin-ico:hover{
+    color: #0077b5;
+    transform: scale(1.2);
+}
+
+#insta-ico{
+    text-decoration: none;
+}
+
+#insta-ico i{
+    color: #0077b5; 
+  transition: color 0.3s, transform 0.3s;
+}
+
+#insta-ico:hover{
+    color: #C13584;
+    transform: scale(1.2);
+}
+
+article {
+    width: 80%;
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--thirdTextColor);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article p {
+    background-color: var(--thirdTextColor);
+    border: 1px solid #e9e3e3;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2, article h3 {
+    color: var(--primaryTextColor);
+    margin: 20px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--contrast);
+    transition: color 0.3s ease;
+}
+
+article h2:hover, article h3:hover {
+    color: var(--secundaryTextColor);
+}
+
+article a {
+    color: var(--contrast);
+    text-decoration: underline;
+}
+
+article a:hover {
+    color: var(--primaryTextColor);
+}
+
 @media screen and (min-width: 1024px) {
     
     .topnav {
@@ -377,6 +540,7 @@ h5{
         width: 100%;
         
     }
+    
 }
 
 @media screen and (min-width:601px) and (max-width:1023px){
@@ -559,8 +723,8 @@ h5{
         align-items: center;
         background-size: cover;
         width: 90%;
-        height: 65vh;
-        margin: auto;
+        height: 50vh;
+        margin: 6.6em auto auto auto;
         padding: 20px;
         background-attachment: scroll;
         
@@ -573,164 +737,4 @@ h5{
     }
     
 }
-
-h1 {
-    color: var(--primaryTextColor);
-    font-size: 3em;
-    width: min(63vw, 90%);
-    margin: 20px auto;
-    text-align: center;
-}
-
-.anim-h1 {
-    animation: focus-in-contract .9s cubic-bezier(.25, .46, .45, .94) both;
-}
-
-@keyframes focus-in-contract {
-    0% {
-        letter-spacing: 2px;
-        filter: blur(12px);
-        opacity: 0;
-    }
-
-    100% {
-        filter: blur(0);
-        opacity: 1;
-    }
-}
-
-footer {
-    background-color: #222;
-    color: var(--thirdTextColor);
-    text-align: center;
-    padding: 20px 0;
-    width: 100;
-}
-
-footer > .midia {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-footer > .midia > a {
-    color: var(--thirdTextColor);
-    font-size: 1.5em;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-scroll-to-top{
-    background-color: var(--contrast);
-    color: #000;
-    font-size: 1.8em;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    position: absolute;
-    right: 20px;    
-}
-
-.btn-scroll-to-top:hover{
-    opacity: 0.8px;
-
-}
-
-.midia:hover{
-    opacity: 1px;
-}
-
-#github-ico{
-    text-decoration: none;
-}
-
-#github-ico i{
-    color: #ffffff; 
-    transition: color 0.3s, transform 0.3s;
-}
-
-#github-ico:hover{
-    color: #7a7272;
-    transform: scale(1.2);
-}
-
-#linkedin-ico{
-    text-decoration: none;
-}
-
-#linkedin-ico i{
-    color: #0077b5; 
-  transition: color 0.3s, transform 0.3s;
-}
-
-#linkedin-ico:hover{
-    color: #0077b5;
-    transform: scale(1.2);
-}
-
-#insta-ico{
-    text-decoration: none;
-}
-
-#insta-ico i{
-    color: #0077b5; 
-  transition: color 0.3s, transform 0.3s;
-}
-
-#insta-ico:hover{
-    color: #C13584;
-    transform: scale(1.2);
-}
-
-article {
-    width: 80%;
-    max-width: 1300px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: var(--thirdTextColor);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-article p {
-    background-color: var(--thirdTextColor);
-    border: 1px solid #e9e3e3;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.7;
-}
-
-article img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-article h2, article h3 {
-    color: var(--primaryTextColor);
-    margin: 20px 0;
-    padding-bottom: 5px;
-    border-bottom: 2px solid var(--contrast);
-    transition: color 0.3s ease;
-}
-
-article h2:hover, article h3:hover {
-    color: var(--secundaryTextColor);
-}
-
-article a {
-    color: var(--contrast);
-    text-decoration: underline;
-}
-
-article a:hover {
-    color: var(--primaryTextColor);
-}
-
 
