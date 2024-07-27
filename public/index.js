@@ -1,5 +1,5 @@
  function showTabs() {
-  if (window.innerWidth <= 910){
+  if (window.innerWidth <= 1023){
     var x = document.getElementById("links")
     if (x.style.display === "block") {
       x.style.display = "none"

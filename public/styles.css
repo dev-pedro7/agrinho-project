@@ -60,6 +60,7 @@ a {
     color: white;
     display: flex;
     align-items: flex-start;
+    margin-right: 13px;
     
 }
 
@@ -245,7 +246,7 @@ label > i{
     align-items: center;
     padding-bottom: 40px;
     padding-left: 40px;
-    margin-right: -13px;
+    margin-right: 13px;
     
 }
 
@@ -305,7 +306,18 @@ h5{
     margin-right:60px;
     margin-bottom: 200px;
 }
-@media screen and (min-width: 911px) {
+
+#logo img{
+ max-height: 100px;
+ margin-bottom: -50px;
+ padding: 0 0 1.2em 1.4em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ max-width: 110px;
+ width: 100%;
+}
+@media screen and (min-width: 1024px) {
     
     .topnav {
         background-color: #2F4F4F;
@@ -367,7 +379,7 @@ h5{
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width:601px) and (max-width:1023px){
     html{
         overflow-x: hidden;
     }
@@ -409,14 +421,116 @@ h5{
         background-size: cover;
         background-attachment: scroll;
         width: 90%;
+        margin-right: auto;
+        margin-left: auto;
         
     }
     .img-p-container, .img-p {
         flex-direction: column;
         display: inline-block;
         align-items: center;
-        margin-bottom: 9em;
-        margin-top: -90px;
+        margin-bottom: 10em;
+        margin-top: -140px;
+    }
+    .img-p-container > div, .img-p > div {
+        width: 90%;
+        height:50vh;
+    }
+    
+    .img-p-container > p, .img-p > p {
+        margin: 30px auto 0 auto;
+        font-size: 1.2em;
+        text-align: center;
+        width: 90%;
+        
+    }
+    #img-sec, #img-ter {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-size: cover;
+        width: 90%;
+        height: 40vh;
+        margin: 0;
+        background-position: 100% 30%;
+        background-size: cover;
+        margin: auto;
+        
+    }
+    
+    #img-drone{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-size: cover;
+        width: 90%;
+        height: 65vh;
+        margin: auto;
+        padding: 20px;
+        background-attachment: scroll;
+        
+    }
+    .img-p{
+        margin-bottom: auto;
+        width: 100%;
+    }
+    #logo{
+        display: none;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 600px) {
+    html{
+        overflow-x: hidden;
+    }
+    .mobile-nav {
+        display: block;
+        overflow: hidden;
+        background-color: var(--bgMenu);
+        position: relative;
+    }
+
+    .mobile-nav #links {
+        display: none;
+        text-align: left;
+    }
+
+    .mobile-nav a {
+        color: var(--thirdTextColor);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+    }
+
+    .mobile-nav a.icon {
+        background: var(--bgMenu);
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        color: var(--thirdTextColor);
+    }
+
+    .item-menu {
+        border: 1px solid rgb(27, 25, 25);
+    }
+
+    .img-home {
+        background-size: cover;
+        background-attachment: scroll;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+    .img-p-container, .img-p {
+        flex-direction: column;
+        display: inline-block;
+        align-items: center;
+        margin-bottom: 10em;
+        margin-top: -140px;
     }
     .img-p-container > div, .img-p > div {
         width: 90%;
@@ -454,6 +568,10 @@ h5{
     .img-p{
         margin-bottom: auto;
     }
+    #logo{
+        display: none;
+    }
+    
 }
 
 h1 {
