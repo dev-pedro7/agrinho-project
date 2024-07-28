@@ -162,7 +162,8 @@ label > i{
     flex: 1;
     margin-left: 20px;
     font-size: 40px;
-    font-weight: 500; 
+    font-weight: 500;
+    margin-top: -50px;
 }
 
 .img-p{
@@ -735,6 +736,8 @@ article a:hover {
     #logo{
         display: none;
     }
-    
+    h1{
+        font-size: 2.5em;
+    }
 }
 
