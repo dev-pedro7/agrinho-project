@@ -4,10 +4,13 @@
 :root {
     --bgColor: #f8f8e9;
     --bgMenu: #333;
+    --secundary-bgMenu: #222;
     --contrast: #98FB98;
     --secundaryTextColor: #C2B280;
     --primaryTextColor: #556B2F;
     --thirdTextColor: #ffffff;
+    --font-family: "Ubuntu", sans-serif;
+    --secundary-font: "Roboto", sans-serif;
 }
 
 * {
@@ -21,7 +24,7 @@ html {
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
     font-style: normal;
     background-color: var(--bgColor);
@@ -46,6 +49,7 @@ a {
     background-color: var(--bgMenu);
     text-align: center;
 }
+
 .hidden-img{
     visibility: hidden;
     width: 0px;
@@ -53,6 +57,7 @@ a {
     margin: 0;
     padding: 0;
 }
+
 .img-home {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(images/img-home.jpg);
     background-attachment: fixed;
@@ -63,7 +68,7 @@ a {
     max-height: 2000px;
     height: 70%;
     width: 94%;
-    color: white;
+    color: var(--thirdTextColor);
     display: flex;
     align-items: flex-start;
     margin-right: 13px;
@@ -74,7 +79,7 @@ a {
     padding: 25px;
     font-size: 40px;
 
-    font-family: "Roboto", sans-serif;
+    font-family: var(--secundary-font);
     font-weight: 600;
 }
 
@@ -87,18 +92,18 @@ input[type="checkbox"] {
 }
 
 .dark {
-    background-color: #333;
-    color: #ffffff;
+    background-color: var(--bgMenu);
+    color: var(--thirdTextColor);
 }
 
 .dark article p{
     color: var(--thirdTextColor);
-    background-color: #222;
+    background-color: var(--secundary-bgMenu);
     border: 1px solid #111010;
 }
 
 .dark article{
-    background-color: #222;
+    background-color:var(--secundary-bgMenu);
 }
 
 .bi-moon {
@@ -129,7 +134,7 @@ input[type="checkbox"] {
 }
 
 label > i{
-    color: #ffffff;
+    color: var(--thirdTextColor);
 }
 
 #img-sec{
@@ -223,7 +228,7 @@ label > i{
       z-index: -1;
     }
     &:hover {
-      color: #fff;
+      color: var(--thirdTextColor);
       &:before {
         width: 100%;
       }
@@ -240,7 +245,7 @@ label > i{
     max-height: 2000px;
     height: 70%;
     width: 95%;
-    color: white;
+    color: var(--thirdTextColor);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -354,7 +359,7 @@ h1 {
 }
 
 footer {
-    background-color: #222;
+    background-color: var(--secundary-bgMenu);
     color: var(--thirdTextColor);
     text-align: center;
     padding: 20px 0;
@@ -400,7 +405,7 @@ footer > .midia > a {
 }
 
 #github-ico i{
-    color: #ffffff; 
+    color: var(--thirdTextColor); 
     transition: color 0.3s, transform 0.3s;
 }
 
@@ -651,7 +656,11 @@ article a:hover {
     }
 }
 
-@media screen and (min-width:320px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    .main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
     html{
         overflow-x: hidden;
     }
@@ -745,6 +754,13 @@ article a:hover {
     }
     h1{
         font-size: 2.5em;
+    }
+    article{
+        width: 93%;
+        
+    }
+    article img{
+        height: 10em;
     }
 }
 
