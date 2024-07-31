@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root {
     --bgColor: #f8f8e9;
     --bgMenu: #333;
@@ -106,6 +106,12 @@ input[type="checkbox"] {
     background-color:var(--secundary-bgMenu);
 }
 
+.dark .tab-content{
+    color: var(--thirdTextColor);
+    background-color: var(--secundary-bgMenu);
+    border: 1px solid #111010;
+}
+
 .bi-moon {
     display: none; 
 }
@@ -165,6 +171,16 @@ label > i{
     margin-bottom: 200px;  
 }
 
+#bela-esperanca{
+    width: 30%;
+    height: 40%;
+    transition: filter 0.3s ease;
+}
+
+#bela-esperanca:hover {
+    filter: brightness(70%);
+}
+
 .img-p-container > #img-sec{
     flex: 0 0 40%;
 }
@@ -192,10 +208,11 @@ label > i{
     
 }
 
+
 .button {
     margin-top: 50px;
     padding: 20px 20px;
-    
+    cursor: pointer;
     color: #000;
     font-size: 1rem;
     letter-spacing: .1rem;
@@ -461,6 +478,11 @@ article p {
     margin: 20px 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.7;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9em;
+    
 }
 
 article img {
@@ -760,7 +782,20 @@ article a:hover {
         
     }
     article img{
-        height: 10em;
+        height: auto;
     }
+    
 }
 
+.tab-content {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 80%;
+}
+.tab-content.active {
+    display: block;
+}

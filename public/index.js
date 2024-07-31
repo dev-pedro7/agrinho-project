@@ -58,3 +58,11 @@ window.onscroll = function() {
 AOS.init()
 
 new window.VLibras.Widget('https://vlibras.gov.br/app');
+
+function openTab(tabName) {
+  const contents = document.querySelectorAll('.tab-content');
+  contents.forEach(content => {
+      content.classList.remove('active');
+  });
+  document.getElementById(tabName).classList.add('active');
+}
