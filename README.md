@@ -27,7 +27,6 @@ Ao entrar no site, você encontrará um menu de navegação na parte superior da
 - **Pagina inicial**: Com uma visão geral do site.
 - **Nossa História**: Artigo sobre a cultura do café no Paraná, Mandaguari e região.
 - **Produtos Locais**: Apresentando os principais fornecedores do belo café de Mandaguari.
-- **Galeria**: Imagens e logotipos associados ao café.
 - **Inovação**: Artigo sobre a agricultura de precisão.
 
 
@@ -53,10 +52,9 @@ Se você tiver dúvidas, sugestões ou quiser colaborar, visite a seção **Cont
 
 Se precisar de ajuda adicional ou tiver perguntas específicas, você pode nos contatar através do e-mail: pedr2046@gmail.com.
 
-
 ## Contribuição
 
-Contribuições são bem-vindas! Se você deseja contribuir com ideias, acesse: <blockquote class="twitter-tweet" data-width="397" data-lang="pt" data-theme="dark"><p lang="es" dir="ltr">teste</p>&mdash; Cidade do Café (@Cidade_do_Cafe) <a href="https://twitter.com/Cidade_do_Cafe/status/1817545987449110762?ref_src=twsrc%5Etfw">28 de julho de 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Contribuições são bem-vindas! Se você deseja contribuir com ideias, acesse: https://x.com/Cidade_do_Cafe/status/1817545987449110762
 
 ## Licença
 
