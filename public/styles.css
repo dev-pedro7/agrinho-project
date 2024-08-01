@@ -171,13 +171,12 @@ label > i{
     margin-bottom: 200px;  
 }
 
-#bela-esperanca{
-    width: 30%;
-    height: 40%;
+#bela-esperanca, #sitio-eliza,#cafe-cocari{
+    
     transition: filter 0.3s ease;
 }
 
-#bela-esperanca:hover {
+#bela-esperanca:hover, #sitio-eliza:hover, #cafe-cocari:hover{
     filter: brightness(70%);
 }
 
@@ -329,15 +328,7 @@ h5{
     padding-bottom: 10px;
 }
 
-.products-img{
-    background-image:url(images/bela-esperanca.jpg);
-    width: 40vw;
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-right:60px;
-    margin-bottom: 200px;
-}
+
 
 #logo img{
  max-height: 100px;
@@ -784,7 +775,18 @@ article a:hover {
     article img{
         height: auto;
     }
-    
+    .products-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
 }
 
 .tab-content {
@@ -796,6 +798,31 @@ article a:hover {
     background-color: #f9f9f9;
     width: 80%;
 }
+
 .tab-content.active {
     display: block;
 }
+
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .cards img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .cards .button {
+    margin-top: 10px;
+  }
