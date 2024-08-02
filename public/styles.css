@@ -111,6 +111,10 @@ input[type="checkbox"] {
     background-color: var(--secundary-bgMenu);
     border: 1px solid #111010;
 }
+.dark ul > li{
+    background-color: var(--secundary-bgMenu);
+    border: 1px solid #574f4f;
+}
 
 .bi-moon {
     display: none; 
@@ -449,7 +453,32 @@ footer > .midia > a {
     color: #C13584;
     transform: scale(1.2);
 }
-
+#left-p{
+    text-align: left;
+    padding-left: 30px;
+}
+ul > li{
+    text-align: left;
+    background-color: var(--thirdTextColor);
+    border: 1px solid #e9e3e3;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7em;
+}
+ul{
+    padding-left: 30px;
+    
+}
+ul {
+    font-family: "Merriweather", serif;
+}
 article {
     width: 80%;
     max-width: 1300px;
@@ -500,12 +529,14 @@ article a {
     color: var(--contrast);
     text-decoration: underline;
 }
-
+abbr{
+    text-decoration: underline;
+}
 article a:hover {
     color: var(--primaryTextColor);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
     
     .topnav {
         background-color: #2F4F4F;
@@ -569,7 +600,13 @@ article a:hover {
     
 }
 
-@media screen and (min-width:601px) and (max-width:1023px){
+@media screen and (min-width:1200px) and (max-width:1299px) {
+    .img-p > p{
+        margin-top: -40px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1024px){
     html{
         overflow-x: hidden;
     }
@@ -666,6 +703,9 @@ article a:hover {
     }
     #logo{
         display: none;
+    }
+    #topnav{
+        width: 100%;
     }
 }
 
@@ -815,6 +855,7 @@ article a:hover {
     align-items: center;
     margin: 20px;
     text-align: center;
+    
   }
   
   .cards img {
