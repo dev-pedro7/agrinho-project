@@ -768,7 +768,7 @@ article a:hover {
         flex-direction: column;
         display: inline-block;
         align-items: center;
-        margin-bottom: 10em;
+        margin-bottom: 11.5em;
         margin-top: -140px;
     }
     .img-p-container > div, .img-p > div {
@@ -832,6 +832,10 @@ article a:hover {
         justify-content: center;
         
       }
+      footer > p{
+        font-size: 0.55em;
+        padding: 3px;
+      }
 }
 
 .tab-content {
@@ -842,6 +846,12 @@ article a:hover {
     border-radius: 8px;
     background-color: #f9f9f9;
     width: 80%;
+}
+
+.tab-content p {
+    font-family:  'Merriweather', serif;
+    font-size: 0.8em;
+    line-height: 1.5em;
 }
 
 .tab-content.active {
