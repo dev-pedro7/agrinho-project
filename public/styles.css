@@ -111,6 +111,7 @@ input[type="checkbox"] {
     background-color: var(--secundary-bgMenu);
     border: 1px solid #111010;
 }
+
 .dark ul > li{
     background-color: var(--secundary-bgMenu);
     border: 1px solid #574f4f;
@@ -210,7 +211,6 @@ label > i{
     font-weight: 500;
     
 }
-
 
 .button {
     margin-top: 50px;
@@ -332,8 +332,6 @@ h5{
     padding-bottom: 10px;
 }
 
-
-
 #logo img{
  max-height: 100px;
  margin-bottom: -50px;
@@ -453,10 +451,12 @@ footer > .midia > a {
     color: #C13584;
     transform: scale(1.2);
 }
+
 #left-p{
     text-align: left;
     padding-left: 30px;
 }
+
 ul > li{
     text-align: left;
     background-color: var(--thirdTextColor);
@@ -472,13 +472,16 @@ ul > li{
     font-style: normal;
     font-size: 0.7em;
 }
+
 ul{
     padding-left: 30px;
     
 }
+
 ul {
     font-family: "Merriweather", serif;
 }
+
 article {
     width: 80%;
     max-width: 1300px;
@@ -529,9 +532,11 @@ article a {
     color: var(--contrast);
     text-decoration: underline;
 }
+
 abbr{
     text-decoration: underline;
 }
+
 article a:hover {
     color: var(--primaryTextColor);
 }
@@ -849,7 +854,7 @@ article a:hover {
     align-items: flex-start;
   }
   
-  .cards {
+.cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -858,12 +863,12 @@ article a:hover {
     
   }
   
-  .cards img {
+.cards img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
   }
   
-  .cards .button {
+.cards .button {
     margin-top: 10px;
   }
