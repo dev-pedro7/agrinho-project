@@ -173,7 +173,7 @@ label > i{
     background-repeat: no-repeat;
     background-position: center center;
     margin-right:60px;
-    margin-bottom: 200px;  
+    margin-bottom: 110px;  
 }
 
 #bela-esperanca, #sitio-eliza,#cafe-cocari{
@@ -799,10 +799,13 @@ article a:hover {
         background-size: cover;
         width: 90%;
         height: 50vh;
-        margin: 6.6em auto auto auto;
+        margin: 15px auto auto auto;
         padding: 20px;
         background-attachment: scroll;
         
+    }
+    .main-container > h1{
+        margin-top: auto;
     }
     .img-p{
         margin-bottom: auto;
