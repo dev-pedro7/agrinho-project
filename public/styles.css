@@ -72,7 +72,7 @@ a {
     display: flex;
     align-items: flex-start;
     margin-right: 13px;
-    
+    border-radius: 6px;
 }
 
 .img-home > p {
@@ -157,6 +157,8 @@ label > i{
     background-position: 100% 30%;
     margin-left:60px;
     margin-bottom: 200px;
+    border-radius: 5px;
+
 }
 
 .img-p-container{
@@ -174,6 +176,8 @@ label > i{
     background-position: center center;
     margin-right:60px;
     margin-bottom: 110px;  
+    border-radius: 5px;
+
 }
 
 #bela-esperanca, #sitio-eliza,#cafe-cocari{
@@ -273,6 +277,7 @@ label > i{
     padding-bottom: 40px;
     padding-left: 40px;
     margin-right: 13px;
+    border-radius: 10px;
     
 }
 
@@ -280,6 +285,9 @@ label > i{
     display: flex;
 }
 
+#plantations{
+    border-radius: 10px;
+}
 #father-img{
     border-radius: 50%;
     width: 80px;
@@ -657,6 +665,7 @@ article a:hover {
         width: 90%;
         margin-right: auto;
         margin-left: auto;
+        
         
     }
     .img-p-container, .img-p {
