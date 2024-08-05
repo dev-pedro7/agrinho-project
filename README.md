@@ -37,33 +37,33 @@ Ao entrar no site, você encontrará um menu de navegação na parte superior da
 
 Na seção **Pagina inicial**, você e recepcionado com atalhos atrativos a conhecer os artigos proporcionados.
 
-### 2. **Nossa História**
+### 2. **Nossa Cronologia**
 
 Em **Nossa História** você pode ler o artigo relacionado a cultura, tradição do café de Mandaguari e região, além de conhecer a história forte do Paraná como um todo com o café.
 
-### 3. **Exploração de Imagens**
+### 3. **Fornecedores regionais**
 
-Em **Produtos Locais**, você pode explorar imagens que capturam a essência da cultura cafeeira. Esta seção inclui fotos de plantações, colheitas, e momentos importantes da produção de café.
+Em **Produtos Locais**, você pode explorar os 3 cafés mais famosos da nossa cidade. Esta seção inclui premiações, produtos oferecidos e um pouco da história de cada empresa.
 
 ### 4. **Inovações nos Campos**
 
-Em **Inovação**, você pode explorar imagens que capturam a essência da cultura cafeeira. Esta seção inclui fotos de plantações, colheitas, e momentos importantes da produção de café.
+Em **Inovação**, juntamente com um especialista de agricultura de precisão te introduzimos sobre o tópico e como ele e crucial para o agricultor hoje em dia.
 
 
 ## Tema Escuro
-O site conta com  opção para alterar ao tema escuro da página, localizado no canto superior direito da página para computador, e para celular fica dentro do menu superior. Aproveite como quiser!
+O site conta com opção para alterar ao tema escuro da página, localizado no canto superior direito da página para computador, e para celular fica no menu superior. Aproveite como quiser!
 
 ## Acessibilidade
-Com a disponibilização open source da biblioteca Vlibras, foi adicionado um bot para ajudar a traduzir textos para Libras. Localizado no meio do canto superior, apenas selecione o texto de preferencia e será traduzido para Libras.
-Além disso adicionamos presença de textos alternativos nas imagens.
+Com a disponibilização open source da biblioteca Vlibras, foi adicionado um bot para ajudar a traduzir textos para Libras. Localizado no meio do canto superior, apenas selecione o texto de preferência e será traduzido para Libras.
+Além disso, adicionamos presença de textos alternativos nas imagens.
 
 ## Responsividade
-A página foi adaptada a todos tipos de telas sem problemas, além de para tela menores adicionamos um menu Hambúrguer na parte superior do site.
+A página foi adaptada a todos os tipos de telas sem problemas, além de para telas menores adicionamos um menu Hambúrguer na parte superior do site.
 
 
 ## Agradecimentos
 
-Todos as imagens da página são de minha autoria, durante o passeio a fazenda Bela Esperança organizado pela Professora Thais Nagaoka. Agradeço Fernando Lopes dono do Café Bela Esperança pela recepção e por autorizar tirar fotos em sua propriedade. Agradeço também a participação especial de Adhan Gustavo Peixoto Toaldo, Coordenador de Agricultura de Precisão na Integra Calcários, por dividir seus conhecimentos de anos de experiencia na agricultura. 
+Todas as imagens da página são de minha autoria, capturadas durante o passeio a fazenda Bela Esperança organizado pela Professora Thais Nagaoka. Agradeço Fernando Lopes dono do Café Bela Esperança pela recepção e por autorizar tirar fotos em sua propriedade. Agradeço também a participação especial de Adhan Gustavo Peixoto Toaldo, Coordenador de Agricultura de Precisão na Integra Calcários, por dividir seus conhecimentos de anos de expêriencia na agricultura. 
 
 
 ## Contatos e Suporte
