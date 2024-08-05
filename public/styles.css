@@ -349,6 +349,8 @@ h1 {
     width: min(63vw, 90%);
     margin: 20px auto;
     text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    
 }
 
 .anim-h1 {
