@@ -1057,6 +1057,8 @@ article a:hover {
 .list {
     list-style-type: none;
     padding-left: 1.2em; 
+    padding: 10px;
+    font-size: 15px;
 }
 
 .list li {
