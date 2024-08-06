@@ -690,7 +690,7 @@ article a:hover {
         width: 90%;
         
     }
-    #img-sec, #img-ter {
+    #img-ter {
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -703,7 +703,19 @@ article a:hover {
         margin: auto;
         
     }
-    
+    #img-sec{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-size: cover;
+        width: 90%;
+        height: 40vh;
+        margin: 0;
+        background-position: 100% 30%;
+        background-size: cover;
+        margin: auto;
+        
+    }
     #img-drone{
         display: flex;
         justify-content: flex-end;
@@ -725,6 +737,10 @@ article a:hover {
     }
     #topnav{
         width: 100%;
+    }
+    #anim-h1{
+        margin-top: 50px;
+        margin-bottom: -250px;
     }
 }
 
