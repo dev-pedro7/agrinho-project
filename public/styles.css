@@ -203,19 +203,22 @@ label > i{
 
 .img-p{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row-reverse; 
     align-items: flex-start;
+    
 }
 
 .img-p > p {
     flex: 1;
     margin-left: 60px;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 500;
-    
+    margin-right: px;
 }
-
+.img-p> #img-ter{
+    flex: 0 0 40%;
+}
 .button {
     margin-top: 50px;
     padding: 20px 20px;
@@ -1011,6 +1014,8 @@ article a:hover {
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .center-container {
