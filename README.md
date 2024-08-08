@@ -69,7 +69,7 @@ Todas as imagens da página são de minha autoria, capturadas durante o passeio 
 ## Contatos e Suporte
 
 Se precisar de ajuda adicional ou tiver perguntas específicas, você pode nos contatar através do e-mail: pedr2046@gmail.com.
-Contribuições também são bem-vindas! Se você deseja contribuir com ideias, acesse: https://x.com/Cidade_do_Cafe/status/1817545987449110762
+
 
 
 ## Licença
